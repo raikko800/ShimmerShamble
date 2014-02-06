@@ -6,7 +6,6 @@ public class Player : MonoBehaviour {
 
 	private Rigidbody2D rigidbody;
 
-	// Use this for initialization
 	void Start () {
 		rigidbody = this.GetComponent<Rigidbody2D>();
 	}
@@ -14,5 +13,10 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		rigidbody.velocity = new Vector2(velocity, 0f);
+	}
+
+	public void SetVerticalPosition(float deltaY) {
+		deltaY 				= deltaY * Time.deltaTime;
+		transform.position 	= new Vector3(transform.position.x, transform.position.y + deltaY, transform.position.z);
 	}
 }
