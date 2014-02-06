@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{E90B5134-2FFB-B65A-4541-E93913CD89C9}") = "ShimmerShambleUnity", "Assembly-CSharp.csproj", "{9805A888-01BC-8692-B6E3-5A13CFB0B335}"
 EndProject
+Project("{E90B5134-2FFB-B65A-4541-E93913CD89C9}") = "ShimmerShambleUnity", "Assembly-CSharp-Editor.csproj", "{9E3421AB-11E0-0BC6-0788-EE1AD24D73CC}"
+EndProject
+Project("{E90B5134-2FFB-B65A-4541-E93913CD89C9}") = "ShimmerShambleUnity", "Assembly-UnityScript-firstpass.unityproj", "{67DF9960-43B0-1DB2-4B7F-DABCED30D2D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +17,19 @@ Global
 		{9805A888-01BC-8692-B6E3-5A13CFB0B335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9805A888-01BC-8692-B6E3-5A13CFB0B335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9805A888-01BC-8692-B6E3-5A13CFB0B335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3421AB-11E0-0BC6-0788-EE1AD24D73CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3421AB-11E0-0BC6-0788-EE1AD24D73CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3421AB-11E0-0BC6-0788-EE1AD24D73CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3421AB-11E0-0BC6-0788-EE1AD24D73CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67DF9960-43B0-1DB2-4B7F-DABCED30D2D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67DF9960-43B0-1DB2-4B7F-DABCED30D2D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67DF9960-43B0-1DB2-4B7F-DABCED30D2D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67DF9960-43B0-1DB2-4B7F-DABCED30D2D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-			GlobalSection(MonoDevelopProperties) = preSolution
+									GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
