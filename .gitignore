@@ -8,3 +8,5 @@
 *.pidb
 
 Unity/Unity.userprefs
+
+*.userprefs
