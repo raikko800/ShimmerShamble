@@ -6,4 +6,6 @@ public class guiElement : MonoBehaviour {
 	public bool left;
 	public bool centerX;
 	public bool centerY;
+
+	public Vector2 screenOffset = Vector2.zero;
 }

@@ -3,19 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class PlayerGUI : MonoBehaviour {
-	public Vector2 screenOffsetControls = Vector2.zero;
-	public Vector2 screenOffsetHullIcon = Vector2.zero;
-
-	public GameObject controls;
-	public GameObject hullIcon;
-
 	private Dictionary<GameObject, Vector2> guiElements;
 
 	void Start () {
 		guiElements = new Dictionary<GameObject, Vector2>();
 
-		guiElements.Add(controls, screenOffsetControls);
-		guiElements.Add (hullIcon, screenOffsetHullIcon);
+		foreach(Transform elementObj in transform) {
+			guiElements.Add (elementObj.gameObject, elementObj.GetComponent<guiElement>().screenOffset);
+		}
 
 		var keys = new List<GameObject>(guiElements.Keys);
 
@@ -27,18 +22,17 @@ public class PlayerGUI : MonoBehaviour {
 	}
 
 	private void PlaceGUI() {
-		Vector3 scale = new Vector3((controls.transform.localScale.x * UIHandler.ScreenScale), (controls.transform.localScale.y * UIHandler.ScreenScale), 1);
-
 		foreach(KeyValuePair<GameObject, Vector2> element in guiElements) {
 			guiElement elementScript = element.Key.GetComponent<guiElement>();
 
 			Vector3 elementPosition = Vector3.zero;
-
 			elementPosition.x = PlaceGUIElementHorizontal	(element.Value.x, elementScript.left, elementScript.centerX);
 			elementPosition.y = PlaceGUIElementVertical		(element.Value.y, elementScript.top, elementScript.centerY);
 
+			Vector3 elementScale = new Vector3((element.Key.transform.localScale.x * UIHandler.ScreenScale), (element.Key.transform.localScale.y * UIHandler.ScreenScale), 1);
+
 			element.Key.transform.localPosition = elementPosition;
-			element.Key.transform.localScale 	= scale;
+			element.Key.transform.localScale 	= elementScale;
 		}
 	}
 
@@ -66,7 +60,7 @@ public class PlayerGUI : MonoBehaviour {
 		float yPosition;
 
 		if(top) {
-			yPosition = (0 + (Screen.height / 2) + screenOffset);
+			yPosition = (0 + (Screen.height / 2) - screenOffset);
 		} else {
 			yPosition = (0 - (Screen.height / 2) + screenOffset);
 		}

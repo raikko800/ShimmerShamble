@@ -304,6 +304,7 @@ MonoBehaviour:
   left: 1
   centerX: 0
   centerY: 0
+  screenOffset: {x: 50, y: 50}
 --- !u!1 &458061620
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +366,7 @@ MonoBehaviour:
   left: 1
   centerX: 0
   centerY: 1
+  screenOffset: {x: 50, y: 0}
 --- !u!1001 &516858241
 Prefab:
   m_ObjectHideFlags: 0
@@ -649,6 +651,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 685053927}
   - 114: {fileID: 685053928}
+  - 114: {fileID: 685053929}
   m_Layer: 12
   m_Name: Sprite (powericon)
   m_TagString: Untagged
@@ -663,7 +666,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 685053926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -432.456329, y: 212.542038, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 35, y: 29, z: 1}
   m_Children: []
   m_Father: {fileID: 1481715472}
@@ -685,6 +688,22 @@ MonoBehaviour:
   mDepth: 2
   mAtlas: {fileID: 11400000, guid: bb63bc82e50ce4fa684890bf7583f110, type: 2}
   mSpriteName: powericon
+--- !u!114 &685053929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685053926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e83ad80da374a411da539a3f3c3ba8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  top: 1
+  left: 1
+  centerX: 0
+  centerY: 0
+  screenOffset: {x: 150, y: 50}
 --- !u!1 &743763421
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +789,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 902681832}
   - 114: {fileID: 902681831}
+  - 114: {fileID: 902681833}
   m_Layer: 12
   m_Name: Sprite (pausebutton)
   m_TagString: Untagged
@@ -802,10 +822,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 902681830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 496.559784, y: 206.019882, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 21, y: 27, z: 1}
   m_Children: []
   m_Father: {fileID: 1481715472}
+--- !u!114 &902681833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 902681830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e83ad80da374a411da539a3f3c3ba8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  top: 1
+  left: 0
+  centerX: 0
+  centerY: 0
+  screenOffset: {x: 50, y: 50}
 --- !u!1 &958062127
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,6 +890,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1050619478}
   - 114: {fileID: 1050619479}
+  - 114: {fileID: 1050619480}
   m_Layer: 12
   m_Name: Sprite (power_bar)
   m_TagString: Untagged
@@ -868,7 +905,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1050619477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -357.763306, y: 212.191528, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 97, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 1481715472}
@@ -890,6 +927,22 @@ MonoBehaviour:
   mDepth: 3
   mAtlas: {fileID: 11400000, guid: bb63bc82e50ce4fa684890bf7583f110, type: 2}
   mSpriteName: power_bar
+--- !u!114 &1050619480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1050619477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e83ad80da374a411da539a3f3c3ba8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  top: 1
+  left: 1
+  centerX: 0
+  centerY: 0
+  screenOffset: {x: 230, y: 50}
 --- !u!1 &1066463235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,10 +1428,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78de912474bad468cb6837cc6cbef603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenOffsetControls: {x: 50, y: 0}
-  screenOffsetHullIcon: {x: 50, y: 50}
-  controls: {fileID: 458061620}
-  hullIcon: {fileID: 267995450}
 --- !u!114 &1481715474
 MonoBehaviour:
   m_ObjectHideFlags: 0
