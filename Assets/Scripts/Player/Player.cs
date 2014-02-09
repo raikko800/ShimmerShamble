@@ -32,11 +32,7 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if(other.tag == "Background") {
-			this.Velocity 	 = 0;
-			this.Lives		 = 0;
-			this.Energy		 = 0;
-			transform.active = false;
-			GameObject deathAnimation = Instantiate(Resources.Load("player_death"), transform.position, Quaternion.identity) as GameObject;
+			Die();
 		}
 	}
 
@@ -54,6 +50,15 @@ public class Player : MonoBehaviour {
 	 */
 	private void ChangeLight() {
 		light.intensity = energy * 0.07f;
+	}
+
+	private void Die ()
+	{
+		this.Velocity 	 = 0;
+		this.Lives		 = 0;
+		this.Energy		 = 0;
+		transform.active = false;
+		GameObject deathAnimation = Instantiate(Resources.Load("player_death"), transform.position, Quaternion.identity) as GameObject;
 	}
 
 	//PROPERTIES
