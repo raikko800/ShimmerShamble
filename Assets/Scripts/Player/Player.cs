@@ -4,6 +4,7 @@ using System.Collections;
 public class Player : MonoBehaviour {
 	public float 		velocity;
 
+	private GameObject	deathAnimation;
 	private Rigidbody2D rigidbody;
 	private Light		light;
 
@@ -11,13 +12,12 @@ public class Player : MonoBehaviour {
 	private float 		lives;
 
 	void Start () {
-		rigidbody 	= this.GetComponent<Rigidbody2D>();
-
 		GameObject lightObj = transform.FindChild("shipLight").gameObject;
 		light 				= lightObj.GetComponent<Light>();
+		rigidbody 			= this.GetComponent<Rigidbody2D>();
 
-		energy 	= 100f;
-		lives 	= 3f;
+		energy 				= 100f;
+		lives 				= 3f;
 	}
 	
 	// Update is called once per frame
@@ -31,8 +31,12 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		if(other.tag == "background") {
-
+		if(other.tag == "Background") {
+			this.Velocity 	 = 0;
+			this.Lives		 = 0;
+			this.Energy		 = 0;
+			transform.active = false;
+			GameObject deathAnimation = Instantiate(Resources.Load("player_death"), transform.position, Quaternion.identity) as GameObject;
 		}
 	}
 
