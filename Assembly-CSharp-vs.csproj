@@ -130,8 +130,12 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Scripts\Camera\FollowPlayer.cs" />
-     <Compile Include="Assets\Scripts\InputScript.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\GUI\PlayerGUI.cs" />
+     <Compile Include="Assets\Scripts\GUI\UIHandler.cs" />
+     <Compile Include="Assets\Scripts\ParticleLayer.cs" />
+     <Compile Include="Assets\Scripts\Pickup\EnergyPickup.cs" />
+     <Compile Include="Assets\Scripts\Player\InputScript.cs" />
+     <Compile Include="Assets\Scripts\Player\Player.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (AlphaClip) .shader" />

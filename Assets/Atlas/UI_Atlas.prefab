@@ -38,59 +38,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 759f2de0585694142b45415c3f7cb85a, type: 2}
+  material: {fileID: 2100000, guid: 3038ad7b1429a47efbdfda1bfa903072, type: 2}
   sprites:
-  - name: power_bar
-    outer:
-      serializedVersion: 2
-      x: 142
-      y: 1012
-      width: 97
-      height: 12
-    inner:
-      serializedVersion: 2
-      x: 142
-      y: 1012
-      width: 97
-      height: 12
-    paddingLeft: .185567006
-    paddingRight: .134020612
-    paddingTop: .166666672
-    paddingBottom: .166666672
-  - name: light_overcharged
+  - name: powericon
     outer:
       serializedVersion: 2
       x: 0
-      y: 392
-      width: 26
-      height: 42
+      y: 319
+      width: 35
+      height: 29
     inner:
       serializedVersion: 2
       x: 0
-      y: 392
-      width: 26
-      height: 42
-    paddingLeft: .769230783
-    paddingRight: .692307711
-    paddingTop: .261904776
-    paddingBottom: .261904776
-  - name: light_off
-    outer:
-      serializedVersion: 2
-      x: 0
-      y: 349
-      width: 26
-      height: 42
-    inner:
-      serializedVersion: 2
-      x: 0
-      y: 349
-      width: 26
-      height: 42
-    paddingLeft: .769230783
-    paddingRight: .692307711
-    paddingTop: .261904776
-    paddingBottom: .261904776
+      y: 319
+      width: 35
+      height: 29
+    paddingLeft: .400000006
+    paddingRight: .428571433
+    paddingTop: .0344827585
+    paddingBottom: .068965517
   - name: hullintegrity
     outer:
       serializedVersion: 2
@@ -125,23 +91,6 @@ MonoBehaviour:
     paddingRight: .0714285746
     paddingTop: .0344827585
     paddingBottom: .068965517
-  - name: powericon
-    outer:
-      serializedVersion: 2
-      x: 0
-      y: 319
-      width: 35
-      height: 29
-    inner:
-      serializedVersion: 2
-      x: 0
-      y: 319
-      width: 35
-      height: 29
-    paddingLeft: .400000006
-    paddingRight: .428571433
-    paddingTop: .0344827585
-    paddingBottom: .068965517
   - name: steering_control
     outer:
       serializedVersion: 2
@@ -159,23 +108,40 @@ MonoBehaviour:
     paddingRight: .378378391
     paddingTop: .368421048
     paddingBottom: .370118856
-  - name: resumebutton
+  - name: power_bar
     outer:
       serializedVersion: 2
-      x: 0
-      y: 232
-      width: 17
-      height: 25
+      x: 142
+      y: 1012
+      width: 97
+      height: 12
     inner:
       serializedVersion: 2
-      x: 0
-      y: 232
-      width: 17
-      height: 25
-    paddingLeft: .529411793
-    paddingRight: .352941185
-    paddingTop: .119999997
-    paddingBottom: .159999996
+      x: 142
+      y: 1012
+      width: 97
+      height: 12
+    paddingLeft: .185567006
+    paddingRight: .134020612
+    paddingTop: .166666672
+    paddingBottom: .166666672
+  - name: light_on
+    outer:
+      serializedVersion: 2
+      x: 38
+      y: 982
+      width: 46
+      height: 42
+    inner:
+      serializedVersion: 2
+      x: 38
+      y: 982
+      width: 46
+      height: 42
+    paddingLeft: .217391297
+    paddingRight: .173913047
+    paddingTop: .261904776
+    paddingBottom: .261904776
   - name: pausebutton
     outer:
       serializedVersion: 2
@@ -193,21 +159,55 @@ MonoBehaviour:
     paddingRight: .238095239
     paddingTop: .0740740746
     paddingBottom: .111111112
-  - name: light_on
+  - name: light_off
     outer:
       serializedVersion: 2
-      x: 38
-      y: 982
-      width: 46
+      x: 0
+      y: 392
+      width: 26
       height: 42
     inner:
       serializedVersion: 2
-      x: 38
-      y: 982
-      width: 46
+      x: 0
+      y: 392
+      width: 26
       height: 42
-    paddingLeft: .217391297
-    paddingRight: .173913047
+    paddingLeft: .769230783
+    paddingRight: .692307711
+    paddingTop: .261904776
+    paddingBottom: .261904776
+  - name: resumebutton
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 232
+      width: 17
+      height: 25
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 232
+      width: 17
+      height: 25
+    paddingLeft: .529411793
+    paddingRight: .352941185
+    paddingTop: .119999997
+    paddingBottom: .159999996
+  - name: light_overcharged
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 349
+      width: 26
+      height: 42
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 349
+      width: 26
+      height: 42
+    paddingLeft: .769230783
+    paddingRight: .692307711
     paddingTop: .261904776
     paddingBottom: .261904776
   mCoordinates: 0
