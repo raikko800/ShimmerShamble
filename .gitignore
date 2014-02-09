@@ -16,3 +16,19 @@ Unity/Unity.userprefs
 *.dwlt
 
 *.sln
+
+*.dll
+
+*.mdb
+
+Library/CurrentMaximizeLayout.dwlt
+
+Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+
+Library/ScriptAssemblies/Assembly-CSharp-Editor.dll.mdb
+
+Library/ScriptAssemblies/Assembly-CSharp.dll
+
+Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+
+Library/metadata/78/78de912474bad468cb6837cc6cbef603
