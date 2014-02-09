@@ -2,13 +2,13 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
-	public float velocity;
+	public float 		velocity;
 
 	private Rigidbody2D rigidbody;
 	private Light		light;
 
-	private float energy;
-	private float lives;
+	private float 		energy;
+	private float 		lives;
 
 	void Start () {
 		rigidbody 	= this.GetComponent<Rigidbody2D>();
@@ -34,7 +34,6 @@ public class Player : MonoBehaviour {
 		if(other.tag == "background") {
 
 		}
-		Debug.Log ("COLLISSSSIOOOOON " + other);
 	}
 
 	/**
@@ -54,6 +53,11 @@ public class Player : MonoBehaviour {
 	}
 
 	//PROPERTIES
+	public float Velocity {
+		get { return velocity; }
+		set { velocity = value; }
+	}
+
 	public float Energy {
 		get { return energy; }
 		set { 

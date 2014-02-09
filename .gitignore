@@ -10,3 +10,9 @@
 Unity/Unity.userprefs
 
 *.userprefs
+
+*.csproj
+
+*.dwlt
+
+*.sln
