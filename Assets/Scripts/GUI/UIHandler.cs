@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class UIHandler : MonoBehaviour {
-	public Vector2 defaultResolution = new Vector2(1600, 1200);
+	public Vector2 defaultResolution = new Vector2(1280, 800);
 	private static float screenScale;
 
 	void Awake() {

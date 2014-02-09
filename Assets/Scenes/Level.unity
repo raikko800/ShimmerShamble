@@ -204,7 +204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &172765803
 Transform:
   m_ObjectHideFlags: 0
@@ -252,6 +252,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 267995451}
   - 114: {fileID: 267995452}
+  - 114: {fileID: 267995453}
   m_Layer: 12
   m_Name: Sprite (hullintegrity)
   m_TagString: Untagged
@@ -266,7 +267,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 267995450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -499.819305, y: 212.424606, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 30, y: 32, z: 1}
   m_Children: []
   m_Father: {fileID: 1481715472}
@@ -288,6 +289,21 @@ MonoBehaviour:
   mDepth: 1
   mAtlas: {fileID: 11400000, guid: bb63bc82e50ce4fa684890bf7583f110, type: 2}
   mSpriteName: hullintegrity
+--- !u!114 &267995453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 267995450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e83ad80da374a411da539a3f3c3ba8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  top: 1
+  left: 1
+  centerX: 0
+  centerY: 0
 --- !u!1 &458061620
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +313,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 458061621}
   - 114: {fileID: 458061622}
+  - 114: {fileID: 458061623}
   m_Layer: 12
   m_Name: Sprite (steering_control)
   m_TagString: Untagged
@@ -311,8 +328,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 458061620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -499.159058, y: 0, z: 0}
-  m_LocalScale: {x: 23.3371773, y: 371.502655, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 37, y: 589, z: 1}
   m_Children: []
   m_Father: {fileID: 1481715472}
 --- !u!114 &458061622
@@ -333,6 +350,21 @@ MonoBehaviour:
   mDepth: 0
   mAtlas: {fileID: 11400000, guid: bb63bc82e50ce4fa684890bf7583f110, type: 2}
   mSpriteName: steering_control
+--- !u!114 &458061623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 458061620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e83ad80da374a411da539a3f3c3ba8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  top: 0
+  left: 1
+  centerX: 0
+  centerY: 1
 --- !u!1001 &516858241
 Prefab:
   m_ObjectHideFlags: 0
@@ -720,6 +752,10 @@ Prefab:
       propertyPath: detachChildren
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 169b10ce10f4327cb9f40f6b117ed8d7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 169b10ce10f4327cb9f40f6b117ed8d7, type: 2}
   m_RootGameObject: {fileID: 172765802}
@@ -1070,7 +1106,7 @@ Transform:
   m_GameObject: {fileID: 1167548740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 15.1468754, z: 0}
-  m_LocalScale: {x: .00413223123, y: .00413223123, z: .00413223123}
+  m_LocalScale: {x: .00396039616, y: .00396039616, z: .00396039616}
   m_Children:
   - {fileID: 1705944965}
   m_Father: {fileID: 0}
@@ -1320,7 +1356,7 @@ Transform:
   m_GameObject: {fileID: 1481715471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 242, y: 242, z: 242}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 902681832}
   - {fileID: 1050619478}
@@ -1339,8 +1375,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78de912474bad468cb6837cc6cbef603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenOffsetControls: {x: 50, y: 100}
+  screenOffsetControls: {x: 50, y: 0}
+  screenOffsetHullIcon: {x: 50, y: 50}
   controls: {fileID: 458061620}
+  hullIcon: {fileID: 267995450}
 --- !u!114 &1481715474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,7 +1390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380ad709abd5943fcad1c18841b72d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultResolution: {x: 3840, y: 2160}
+  defaultResolution: {x: 1280, y: 800}
 --- !u!1 &1513720217
 GameObject:
   m_ObjectHideFlags: 0
@@ -4869,7 +4907,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1859079674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -.49990651, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1221796631}
