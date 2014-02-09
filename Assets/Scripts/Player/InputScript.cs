@@ -32,6 +32,9 @@ public class InputScript : MonoBehaviour {
 
 			lastMousePosition = Input.mousePosition;
 		}
+
+		if(Input.GetMouseButtonUp(0))
+			lastMousePosition = Vector3.zero;
 	}
 
 	private bool CheckMovingHalf() {
