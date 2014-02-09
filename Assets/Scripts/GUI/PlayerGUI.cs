@@ -9,7 +9,7 @@ public class PlayerGUI : MonoBehaviour {
 		guiElements = new Dictionary<GameObject, Vector2>();
 
 		foreach(Transform elementObj in transform) {
-			guiElements.Add (elementObj.gameObject, elementObj.GetComponent<guiElement>().screenOffset);
+			guiElements.Add (elementObj.gameObject, elementObj.GetComponent<guiElement>().ScreenOffset);
 		}
 
 		var keys = new List<GameObject>(guiElements.Keys);
@@ -26,8 +26,8 @@ public class PlayerGUI : MonoBehaviour {
 			guiElement elementScript = element.Key.GetComponent<guiElement>();
 
 			Vector3 elementPosition = Vector3.zero;
-			elementPosition.x = PlaceGUIElementHorizontal	(element.Value.x, elementScript.left, elementScript.centerX);
-			elementPosition.y = PlaceGUIElementVertical		(element.Value.y, elementScript.top, elementScript.centerY);
+			elementPosition.x = PlaceGUIElementHorizontal	(element.Value.x, elementScript.Left, elementScript.CenterX);
+			elementPosition.y = PlaceGUIElementVertical		(element.Value.y, elementScript.Top, elementScript.CenterY);
 
 			Vector3 elementScale = new Vector3((element.Key.transform.localScale.x * UIHandler.ScreenScale), (element.Key.transform.localScale.y * UIHandler.ScreenScale), 1);
 
