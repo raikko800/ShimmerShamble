@@ -32,3 +32,11 @@ Library/ScriptAssemblies/Assembly-CSharp.dll
 Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
 
 Library/metadata/78/78de912474bad468cb6837cc6cbef603
+
+*.dwlt
+
+Library/expandedItems
+
+*.dwlt
+
+Library/CurrentLayout.dwlt
