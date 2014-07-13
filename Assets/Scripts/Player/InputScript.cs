@@ -2,24 +2,20 @@
 using System.Collections;
 
 public class InputScript : MonoBehaviour {
-	private Player player;
+	private Player	player;
 	private Vector3 lastMousePosition;
 
-	// Use this for initialization
 	void Start () {
-		player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-
-		lastMousePosition = Vector3.zero;
+		player 				= GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+		lastMousePosition 	= Vector3.zero;
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		CheckMouseInput();
 	}
 
 	private void CheckMouseInput() {
 		if(Input.GetMouseButton(0)) {
-
 			if(CheckMovingHalf()) {
 				if(lastMousePosition != Vector3.zero) {
 					Vector3 tempMousePos = Input.mousePosition;
